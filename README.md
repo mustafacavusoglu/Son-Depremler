@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Türkiye Deprem Verileri Uygulaması
 
-## Getting Started
+Bu uygulama, Türkiye'deki son depremleri gerçek zamanlı olarak görüntüleyen bir web uygulamasıdır. [Cursor](https://cursor.sh/) IDE kullanılarak geliştirilmiştir.
 
-First, run the development server:
+## Özellikler
+
+- Kandilli Rasathanesi API'si üzerinden canlı deprem verilerini gösterir
+- Her deprem için konum, büyüklük ve derinlik bilgilerini görüntüler
+- Google Maps entegrasyonu ile deprem konumlarını haritada gösterir
+- Otomatik veri yenileme (60 saniyede bir)
+- Modern ve responsive tasarım
+- Karanlık mod desteği
+
+## Kullanılan Teknolojiler
+
+- [Next.js](https://nextjs.org/) - React Framework
+- [Tailwind CSS](https://tailwindcss.com/) - Stil kütüphanesi
+- [Axios](https://axios-http.com/) - HTTP istekleri için
+- [Kandilli Rasathanesi API](https://api.orhanaydogdu.com.tr/deprem/kandilli/live) - Deprem verileri için
+
+## Başlangıç
+
+Projeyi yerel ortamınızda çalıştırmak için:
 
 ```bash
+# Depoyu klonlayın
+git clone [repo-url]
+
+# Bağımlılıkları yükleyin
+npm install
+
+# Geliştirme sunucusunu başlatın
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresini açarak uygulamayı görüntüleyebilirsiniz.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Geliştirme Ortamı
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Bu proje [Cursor](https://cursor.sh/) IDE kullanılarak geliştirilmiştir. Cursor, yapay zeka destekli kod tamamlama ve önerileri ile geliştirme sürecini hızlandıran modern bir IDE'dir.
 
-## Learn More
+## Lisans
 
-To learn more about Next.js, take a look at the following resources:
+Bu proje MIT lisansı altında lisanslanmıştır.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Teşekkür
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Deprem verilerini sağlayan Kandilli Rasathanesi'ne
+- API'yi geliştiren [Orhan Aydoğdu](https://api.orhanaydogdu.com.tr/)'ya
+- Modern ve verimli geliştirme ortamı sağlayan Cursor ekibine 
