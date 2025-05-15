@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import moment from 'moment';
 
 interface Earthquake {
   _id: string;
